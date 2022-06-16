@@ -1,5 +1,3 @@
-# Thesis
-
 # Introduction
 Here you can find the results of the experiments I made for my thesis, which is about energy demand forecasting under a federated learning setting.
 
