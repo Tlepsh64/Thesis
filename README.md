@@ -4,6 +4,7 @@ Here you can find the results of the experiments I made for my thesis, which is 
 Until now, I have experimented with:
 
   - Centralized Forecasting
+  - Fully Distributed Forecasting(clients are disconnected, models are trained independently and no aggregation of weights take place)
   - Vanilla FedAVG
   - [FedAVG with Hierarchical Clustering](https://arxiv.org/abs/2004.11791)
   - [IFCA](https://arxiv.org/abs/2006.04088)
