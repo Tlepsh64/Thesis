@@ -10,11 +10,11 @@ Until now, I have experimented with:
   - [IFCA](https://arxiv.org/abs/2006.04088)
 
 
-The [dataset](https://data.london.gov.uk/dataset/smartmeter-energy-use-data-in-london-households) I used was energy demand measurement data of households located in London. For centralized learning setting, I have added the corresponding [weather data](https://www.kaggle.com/datasets/jeanmidev/smart-meters-in-london?select=weather_hourly_darksky.csv) and some datetime features for all the households. This is due to the fact that my HPC credits are getting too low for doing the same with federated learning experiments. 
+The [dataset](https://data.london.gov.uk/dataset/smartmeter-energy-use-data-in-london-households) I used was energy demand measurement data of households located in London. I have added the corresponding [weather data](https://www.kaggle.com/datasets/jeanmidev/smart-meters-in-london?select=weather_hourly_darksky.csv) and some datetime features for all the households but commented them out in my scripts. This is due to the fact that my HPC credits are getting too low as higher features demand higher RAM, in addition to the fact that those features don't change the results significantly.
 
 Since I am running a single-machine simulation, the FL rounds are executed serially in the clients, thus the RAM usage goes out of the roof(hence I lose too much HPC credits with every FL experiment). Parallelizing the local trainings will get rid of this issue, but I don't know how to do it yet.
 
-I still need to refine the experiments with more clever features, in addition to removing trend&seasonality from the data. The energy usage is really violent for some houses and inter-household variance seems to be quite high as well. Thus, counting on weather & energy data & datetime features are not sufficient to reduce the MSE values. In all experiment settings, the R2 value is negative which means the model is struggling a lot to capture the variance in the data.
+I still need to refine the experiments with more clever features, or better still, do some serious anomaly removal. The energy usage is really violent for some houses and inter-household variance seems to be quite high as well. Thus, counting on weather & energy data & datetime features are not sufficient to reduce the MSE values. In all experiment settings, the R2 value is negative which means the model is struggling a lot to capture the variance in the data.
 
 # Technicalities
 
