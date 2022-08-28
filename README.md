@@ -39,6 +39,6 @@ The model uses past 12 observations to forecast the 13th one. The train batch si
 ## Evaluation Metrics
 I used three metrics; MSE, MAPE and R2. MAPE error is too high but that is due to some instability in its calculation, ie sometimes denominator gets too small of a value and mean absolute percentage error gets much bigger than it should be. MSE seems to be small with every experimental setting, but if you consider the energy demand values which themselves are also small(generally between 0 and 1 kwh), the MSE metric I'm getting is not good. R2 values prove this fact unfortunately.
 
-## CFL Hyperparams
+## CFL Hyperparameters
 It'd be best to refer to the methodology section of thesis for understanding the hyperparameters of Clustered Federated Learning algorithms due to their complex nature.
 
