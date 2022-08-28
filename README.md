@@ -16,7 +16,7 @@ Since I am running a single-machine simulation, the FL rounds are executed seria
 
 I still need to refine the experiments with more clever features, or better still, do some serious anomaly removal. The energy usage is really violent for some houses and inter-household variance seems to be quite high as well. Thus, counting on weather & energy data & datetime features are not sufficient to reduce the MSE values. In all experiment settings, the R2 value is negative which means the model is struggling a lot to capture the variance in the data.
 
-For the actual scripts, please use the .py files inside the 'Scripts' folder. If you'd like to take a quick look at the results, you can check the 'Demos' folder. The .ipynb files have some small differences from the actual .py files I used; but these differences are with respect to visualization and hyperparameters, ie not essential.
+For the actual scripts, please use the .py files inside the 'Scripts' folder. If you'd like to take a quick look at the results, you can check the 'Demos' folder. The .ipynb files have some small differences from the actual .py files I used; but these differences are with respect to visualization and hyperparameters, ie not essential. Lastly, the baselines I created that do not use any federated learning do not have their own .py scripts since Colab was enough to experiment with them.
 
 # Technicalities
 
