@@ -42,3 +42,5 @@ I used three metrics; MSE, MAPE and R2. MAPE error is too high but that is due t
 ## CFL Hyperparameters
 It'd be best to refer to the methodology section of thesis for understanding the hyperparameters of Clustered Federated Learning algorithms due to their complex nature.
 
+# Future Outlook
+I plan to update this repo with newer datasets and algorithms, in addition to new training scenarios where security of the system has more importance. Feel free to reach out to me in case you would like to contribute! 
